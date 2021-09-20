@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Besley";
+}
+
+
+.parent{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    /* fortæller hvordan child elementerne skal fordeles horizontalt */
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.child{
+    background-color: red;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+    color: black;
+    font-size: 2rem;
+
+}

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Besley";
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    background-image: url("./assets/hussan-amir-h0DK5BIGBEg-unsplash.jpg");
+    background-size: cover; 
+    overflow: hidden;
+
+}
+
+header{
+    background-color: rgb(36, 93, 167);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    display: grid;
+    place-items: center;
+    color:black;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+main{
+    display: grid;
+    grid-auto-flow: column;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    background-color:rgba(255, 255, 255, 0.4);
+}
+
+.page div{
+    display: grid;
+    place-items: center;   
+}
+
+.page{
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    scroll-snap-align: center;
+
+
+}
+footer{
+    background-color: red;
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+}

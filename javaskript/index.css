@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family:"Besley";
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 10fr 1rem;
+    height: 100vh;
+
+
+}
+
+header{
+    background-color: aqua;
+    display: grid;
+    place-items: center;
+}
+
+main{
+    background-color:crimson;
+    display: grid;
+    place-items: center;
+}
+
+
+#tid{
+    font-size: 4rem;
+    border: .3rem solid white;
+    padding: 2rem;
+    height: 20vh;
+    width: 20vh;
+    display: grid;
+    place-items: center;
+    transition: .4s all ease-in-out;
+    border-radius: 0;
+
+}
+
+#tid:hover{
+    background-color: yellow;
+}
+
+footer{
+    background-color: chartreuse;
+    transition: 1s all ease-in-out;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+#button{
+    color: green;
+    border: 1px solid white;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+#button:hover{
+    transform:scale(1.2);
+    border-radius: 1rem;
+    
+}
